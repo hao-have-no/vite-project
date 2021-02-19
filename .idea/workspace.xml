@@ -4,6 +4,24 @@
     <list default="true" id="058eb2aa-a2b7-4ae7-8992-1d1dd40445e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FlyCard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/use/touch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/demo-tantan.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/demo-zhihu.vue" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,14 +38,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="27">
-                <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-                <folding>
-                  <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                  <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                  <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                  <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                </folding>
+              <first_editor relative-caret-position="378">
+                <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -40,21 +52,23 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>touchStart</find>
-      <find>onDragStart</find>
       <find>reset</find>
       <find>resetAllCardDown</find>
       <find>resetAllCard</find>
-      <find>touchCancel</find>
-      <find>touchMove</find>
-      <find>onDragMove</find>
-      <find>onCardDragMove</find>
       <find>init card</find>
       <find>onCardThrowDone</find>
       <find>cardBgColor</find>
       <find>move</find>
       <find>console.log</find>
       <find>onThrowDone</find>
+      <find>onDragMove</find>
+      <find>onCardDragMove</find>
+      <find>useTouch</find>
+      <find>touchStart</find>
+      <find>touchCancel</find>
+      <find>touchMove</find>
+      <find>makeCardThrow</find>
+      <find>onDragStart</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -62,15 +76,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/components/HelloWorld.vue" />
         <option value="$PROJECT_DIR$/src/App.vue" />
-        <option value="$PROJECT_DIR$/src/components/FlyCard.vue" />
         <option value="$PROJECT_DIR$/src/use/touch.js" />
         <option value="$PROJECT_DIR$/src/views/demo-tantan.vue" />
+        <option value="$PROJECT_DIR$/src/components/FlyCard.vue" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -93,22 +112,6 @@
             <path>
               <item name="vue3-demo-vite" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue3-demo-vite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue3-demo-vite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue3-demo-vite" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue3-demo-vite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue3-demo-vite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue3-demo-vite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue3-demo-vite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,12 +175,27 @@
       <workItem from="1609308315593" duration="3342000" />
       <workItem from="1609722215257" duration="12000" />
       <workItem from="1610959443264" duration="9924000" />
-      <workItem from="1613704185058" duration="1142000" />
+      <workItem from="1613704185058" duration="1783000" />
     </task>
+    <task id="LOCAL-00001" summary="update md">
+      <created>1613705352070</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613705352070</updated>
+    </task>
+    <task id="LOCAL-00002" summary="增加注释">
+      <created>1613705814129</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613705814129</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19458000" />
+    <option name="totallyTimeSpent" value="20099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -197,7 +215,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33054394" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2332636" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -206,22 +224,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update md" />
+    <MESSAGE value="增加注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加注释" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/views/demo-tantan.vue" />
     <entry file="file://$PROJECT_DIR$/src/assets/5.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/FlyCard.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="190" column="17" selection-start-line="190" selection-start-column="17" selection-end-line="190" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/HelloWorld.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -233,16 +244,6 @@
     <entry file="file://$PROJECT_DIR$/src/views/demo-zhihu.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1296" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/use/touch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="179" column="1" selection-start-line="179" selection-start-column="1" selection-end-line="179" selection-end-column="1" />
-          <folding>
-            <element signature="e#346#495#0" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -284,22 +285,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/demo-tantan.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="271">
+          <caret line="92" column="20" lean-forward="true" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/use/touch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="e#346#495#0" />
+            <element signature="n#!!block;n#touchStart#0;n#!!block;n#useTouch#0" />
+            <element signature="n#!!block;n#touchMove#0;n#!!block;n#useTouch#0" />
+            <element signature="n#!!block;n#touchCancel#0;n#!!block;n#useTouch#0" />
+            <element signature="e#1993#2191#0" />
+            <element signature="n#!!block;n#resetAllCardDown#0;n#!!block;n#useTouch#0" />
+            <element signature="n#!!block;n#resetAllCard#0;n#!!block;n#useTouch#0" />
+            <element signature="n#!!block;n#makeCardThrow#0;n#!!block;n#useTouch#0" />
+            <element signature="n#!!block;n#makeCardBack#0;n#!!block;n#useTouch#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/FlyCard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="163" column="47" selection-start-line="163" selection-start-column="36" selection-end-line="163" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="27">
-            <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-            <folding>
-              <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-              <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-              <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-              <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            </folding>
+          <first_editor relative-caret-position="378">
+            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
