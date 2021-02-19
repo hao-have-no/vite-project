@@ -1,15 +1,5 @@
 ## 备战2021，仿探探拖拽卡片效果Vue3实现
-
-大帅刚做了一版类似`探探`的`飞卡`效果组件，十分炫酷！
-
-只可惜不是vue3版本，下面带大家看看如何正确搬运到vue3中。
-
-`绝对抄袭，如有不同，纯属巧合`😁
-
-
-![Dec-18-2020 11-07-03](https://gitee.com/57code/picgo/raw/master/Dec-18-2020%2011-07-03.gif)
-
-
+根据大帅老师和杨村长的文章，进行的实践
 
 ### 飞卡原理
 
@@ -254,38 +244,3 @@ export default {
 - 我们的业务逻辑可复用了
 - 我们的代码完全消除了`this`，更有利于支持ts
 - 重构过程我们加强了对业务的理解，这些代码都不是我写的，但是我很快就搞清楚了组件真正需要的接口有哪些，哪些方法只是touch内部需要并不需要暴露出去的。
-
-
-
-### 思考
-
-大家观察其他卡片的操作代码，不难发现，它们很有规律，应该很容易进一步抽象成更加通用、可复用的逻辑，比如我能不能动态指定卡片的数量，而不是像现在这样写死，这样大大限制了它的通用性。这个留给大家实现，可以给[我的项目](https://github.com/57code/flycart-in-vue3)提pr。
-
-<img src="https://gitee.com/57code/picgo/raw/master/image-20201218112352669.png" alt="image-20201218112352669" style="zoom:30%;" />
-
-
-
-### 代码仓库
-
-https://github.com/57code/flycart-in-vue3
-
-
-
-### 关注杨村长
-
-关于该案例就说到这里，希望抛砖引玉，引出更多好的内容出现。
-
-我近期的文章（感谢掘友的鼓励与支持🌹🌹🌹）：
-
-- [🔥又是一夜，这篇Composition-API实操还觉得短吗](https://juejin.im/post/6892017198450081800) 198👍
-- [🔥拿下vue3你要做好这些准备](https://juejin.im/post/6866373381424414734) 62👍
-- [🔥闪电五连鞭：Composition API原理深度剖析](https://juejin.im/post/6894993303486332941) 49👍
-- [🔥我的非凡2020 | 掘金年度征文](https://juejin.cn/post/6904058925482672141) 35👍
-
-我的视频教程（感谢掘友的鼓励与支持🌹🌹🌹）：
-
-- [【全网首发】Vue3.0光速上手「持续更新中」](https://www.bilibili.com/video/BV1Wh411X7Xp) 523👍
-- [【面霸养成】天天造轮子 (每天一更，建议收藏)](https://www.bilibili.com/video/BV13v411C7VC) 69👍
-- [【源码解读】村长vue3源码剖析](https://www.bilibili.com/video/BV1iT4y137yj) 60👍
-- [【快乐1024】给程序员同胞在线发老婆！](https://www.bilibili.com/video/BV16z4y1o7Wg)31👍
-
