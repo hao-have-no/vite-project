@@ -96,6 +96,7 @@ export default {
     };
   },
   methods: {
+    //通过emit在flycard进行广播，通知应用层进行相关的操作
 
     onCardDragMove(obj) {
       if (obj.left < -10) {

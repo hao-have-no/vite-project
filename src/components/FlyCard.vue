@@ -161,6 +161,7 @@ export default {
     "onThrowStart",
     "onThrowDone",
   ],
+  //compositionApi实际应用，将对应的方法全部抽象出来，通过setup引用进来
   setup(props, { emit }) {
     console.log('init card set up',props);
     const touchState = useTouch(props, {
