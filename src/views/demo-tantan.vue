@@ -23,7 +23,7 @@
       :cardWidth="200"
       :cardHeight="240"
       :throwTriggerDistance="100"
-      dragDirection="horizontal"
+      :dragDirection="'horizontal'"
       :hasShadow="true"
     >
       <template #firstCard style="width: 100%; height: 100%">
@@ -102,9 +102,9 @@ export default {
       if (obj.left < -10) {
         this.actionName = "不喜欢";
       } else if (obj.left > 10) {
-        this.actionName = "喜欢";
+        this.actionName = "喜欢"
       } else {
-        this.actionName = "";
+        this.actionName = ""
       }
     },
     onCardDragStop(obj) {
@@ -114,6 +114,7 @@ export default {
       const temp = this.cards[0];
       this.cards.push(temp);
       this.cards.splice(0, 1);
+      var cc=0
     },
   },
 };
