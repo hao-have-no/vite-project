@@ -15,6 +15,8 @@ vite2变化分析
 
 ### 别名定义
 不再需要像vite1一样在别名前后加上/，这和webpack项目配置可以保持一致便于移植，好评！
+vite1:"/comps/": path.resolve(__dirname, "src/components"),
+vite2:"comps": path.resolve(__dirname, "src/components"),
 
 ### 插件API重新设计
 Vite2插件API扩展自Rollup插件体系，因此能兼容现存的Rollup插件
@@ -42,3 +44,6 @@ import { viteMockServe } from 'vite-plugin-mock'
   },
 } 
 
+> 实战，搭建基本的体系（侧边栏，权限鉴定（npm包/vite分模块打包），面包屑）
+> 发布一个组件npm
+> tdd,单元测试
