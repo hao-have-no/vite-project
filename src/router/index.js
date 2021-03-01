@@ -56,28 +56,30 @@ export const routes=[
             {
                 path: "list",
                 component: () => import("views/users/list.vue"),
-                meta: {title: "用户列表", icon: "el-icon-document"},
-                children: [
-                    {
-                        path: "edit/:id",
-                        name: "userEdit",
-                        component: () => import("views/users/edit.vue"),
-                        hidden: true,
-                        meta: {
-                            title: "编辑用户信息",
-                            activeMenu: "/users/list",
-                        }
-                    },
-                    {
-                        path: "create",
-                        component: () => import("views/users/create.vue"),
-                        hidden: true,
-                        meta: {
-                            title: "创建新用户",
-                            activeMenu: "/users/list",
-                        },
-                    }
-                ]
+                meta: {
+                    title: "用户列表",
+                    icon: "el-icon-document",
+                },
+                children:[]
+            },
+            {
+                path: "create",
+                component: () => import("views/users/create.vue"),
+                hidden: true,
+                meta: {
+                    title: "创建新用户",
+                    activeMenu: "/users/list",
+                },
+            },
+            {
+                path: "edit/:id",
+                name: "userEdit",
+                component: () => import("views/users/edit.vue"),
+                hidden: true,
+                meta: {
+                    title: "编辑用户信息",
+                    activeMenu: "/users/list",
+                },
             },
         ],
     },
