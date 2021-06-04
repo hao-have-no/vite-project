@@ -20,5 +20,6 @@ export default defineConfig({
       dirs: path.resolve(__dirname, "src/directives")
     },
   },
-  plugins: [vue(),vueJsx(),viteMockServe({ supportTs: false })]
+  // plugins: [vue(),vueJsx(),viteMockServe({ supportTs: false })]
+  plugins: [vue(),vueJsx()]
 })

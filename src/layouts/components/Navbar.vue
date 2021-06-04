@@ -4,7 +4,7 @@
     <breadcrumb class="breadcrumb-container"></breadcrumb>
 
     <!-- 右侧下拉菜单 -->
-    <div class="right-menu">
+    <div class="right-menu" v-if="false">
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
           <img src="/src/assets/logo.png" class="user-avatar" />

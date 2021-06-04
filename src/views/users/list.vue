@@ -15,10 +15,10 @@
       highlight-current-row
       style="width: 100%"
     >
-      <el-table-column align="center" label="ID" prop="id"></el-table-column>
-      <el-table-column align="center" label="账户名" prop="name">
+      <el-table-column align="center" label="ID" prop="_id"></el-table-column>
+      <el-table-column align="center" label="账户名" prop="realName">
       </el-table-column>
-      <el-table-column align="center" label="年龄" prop="age">
+      <el-table-column align="center" label="电话号" prop="mobile">
       </el-table-column>
       <!-- 操作列 -->
       <el-table-column label="操作" align="center">
@@ -71,16 +71,17 @@ export default {
     function handleEdit({ row }) {
       router.push({
         name: "userEdit",
-        params: { id: row.id },
+        params: { id: row._id },
       });
     }
 
     // 删除玩家
     function handleDelete({ row }) {
-      delItem(row.id).then(() => {
+      delItem(row._id).then(() => {
         // todo:删除这一行，或者重新获取数据
         // 通知用户
         Message.success("删除成功！");
+        getList();
       });
     }
 

@@ -8,8 +8,8 @@ export function useList() {
     list: [], // 列表数据
     total: 0,
     listQuery: {
-      page: 1,
-      limit: 5,
+      currentPage: 1,
+      pageSize: 5,
     },
   });
 
@@ -18,14 +18,14 @@ export function useList() {
     state.loading = true;
 
     return request({
-      url: "/getUsers",
+      url: "/user",
       method: "get",
       params: state.listQuery,
     })
       .then(({ data, total }) => {
         // 设置列表数据
-        state.list = data;
-        state.total = total;
+        state.list = data.list;
+        state.total = data.count;
       })
       .finally(() => {
         state.loading = false;
@@ -37,8 +37,8 @@ export function useList() {
     state.loading = true;
 
     return request({
-      url: "/deleteUser",
-      method: "get",
+      url: `/user`,
+      method: "delete",
       params: { id },
     }).finally(() => {
       state.loading = false;
@@ -52,8 +52,10 @@ export function useList() {
 }
 
 const defaultData = {
-  name: "",
-  age: undefined,
+  realName: "",
+  mobile: "",
+  password:"",
+  passwords:""
 };
 
 export function useItem(isEdit, id) {
@@ -64,9 +66,8 @@ export function useItem(isEdit, id) {
     if (isEdit && id) {
       // 获取玩家详情
       request({
-        url: "/getUser",
+        url: `/user/${id}`,
         method: "get",
-        params: { id },
       }).then(({ data }) => {
         model.value = data;
       });
@@ -76,14 +77,14 @@ export function useItem(isEdit, id) {
   const updateUser = () => {
     return request({
       url: "/updateUser",
-      method: "post",
+      method: "put",
       data: model.value,
     });
   };
 
   const addUser = () => {
     return request({
-      url: "/addUser",
+      url: "/user",
       method: "post",
       data: model.value,
     });
