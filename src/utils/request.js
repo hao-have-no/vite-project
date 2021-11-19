@@ -19,11 +19,11 @@ const service = axios.create({
 service.interceptors.request.use(
   (config) => {
     // 指定请求令牌
-    // if (store.getters.token) {
-    // // 自定义令牌的字段名为X-Token，根据咱们后台再做修改
-    // config.headers["X-Token"] = store.getters.token;
-    // }
-    // config.headers["X-Token"] = "my token";
+    // console.log(store.state.token);
+    if (store.state.token) {
+    // 自定义令牌的字段名为X-Token，根据咱们后台再做修改
+    config.headers["Authorization"] =`Bearer ${store.state.token}`;
+    }
     return config;
   },
   (error) => {

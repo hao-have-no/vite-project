@@ -1,7 +1,7 @@
 <template>
   <h1>{{ msg }}</h1>
   <p>{{$store.state.counter}}</p>
-  <el-button @click="()=>{state.count++;$store.state.counter++}">count is: {{ state.count }}</el-button>
+  <el-button @click="()=>{state.count++;$store.state.counter++;$store.state.token=true}">count is: {{ state.count }}</el-button>
   <p>
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.

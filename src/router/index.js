@@ -30,7 +30,7 @@ export const routes=[
                 path: "home",
                 component: () => import("views/home.vue"),
                 name: "Home",
-                meta: { title: "首页", icon: "el-icon-s-home" },
+                meta: { title: "首页", icon: "el-icon-s-home"},
                 children: [
                     {
                         path: ":id",
@@ -83,11 +83,41 @@ export const routes=[
             },
         ],
     },
+    {
+        path: "/login",
+        component:()=>import("views/login.vue"),
+        name:'Login',
+        meta: { title: "登录页面"},
+    }
 ];
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
+});
+
+const canUserAccess=()=>{
+    return !!localStorage.getItem('token');
+
+};
+
+router.beforeEach(async (to, from) => {
+    console.log(to);
+    let rel = true;
+    if (to.path.includes('login')){
+        console.log('111');
+    }else{
+        rel = await canUserAccess();
+    }
+    document.title = to.meta.title;
+    if (!rel){
+        console.log(to);
+        router.push({
+            path:'login',
+            query:{redirect:to.path}
+        })
+    }
+    return rel;
 });
 
 export default router;

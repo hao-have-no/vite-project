@@ -24,7 +24,7 @@
 import { Message } from "element3";
 import { reactive, ref } from "vue";
 import { useRoute } from "vue-router";
-import { useItem } from "../model/userModel";
+import { useItem } from "../../../model/userModel";
 
 export default {
   props: {

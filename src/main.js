@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import VueCookies from 'vue-cookies';
 
 // 全局样式
 import "styles/index.scss";

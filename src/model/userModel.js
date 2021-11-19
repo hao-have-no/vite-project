@@ -1,5 +1,5 @@
 import { reactive, onMounted, ref } from "vue";
-import request from "utils/request";
+import request from "/@/utils/request";
 
 export function useList() {
   // 列表数据
@@ -18,7 +18,7 @@ export function useList() {
     state.loading = true;
 
     return request({
-      url: "/user",
+      url: "/api/user",
       method: "get",
       params: state.listQuery,
     })

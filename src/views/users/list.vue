@@ -55,7 +55,7 @@ import { toRefs } from "vue";
 import { useRouter } from "vue-router";
 import { Message } from "element3";
 import Pagination from "comps/Pagination.vue";
-import { useList } from "./model/userModel";
+import { useList } from "/@/model/userModel";
 
 export default {
   name: "UserList",
