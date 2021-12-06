@@ -37,7 +37,7 @@ export function useList() {
     state.loading = true;
 
     return request({
-      url: `/user`,
+      url: `/api/user`,
       method: "delete",
       params: { id },
     }).finally(() => {
@@ -66,7 +66,7 @@ export function useItem(isEdit, id) {
     if (isEdit && id) {
       // 获取玩家详情
       request({
-        url: `/user/${id}`,
+        url: `/api/user/${id}`,
         method: "get",
       }).then(({ data }) => {
         model.value = data;
@@ -76,7 +76,7 @@ export function useItem(isEdit, id) {
 
   const updateUser = () => {
     return request({
-      url: "/updateUser",
+      url: "/api/updateUser",
       method: "put",
       data: model.value,
     });
@@ -84,7 +84,7 @@ export function useItem(isEdit, id) {
 
   const addUser = () => {
     return request({
-      url: "/user",
+      url: "/api/user",
       method: "post",
       data: model.value,
     });
